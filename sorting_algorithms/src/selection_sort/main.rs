@@ -15,7 +15,7 @@ impl SelectionSort {
         let mut min: i32;
         let mut index: usize;
         let n: usize = a.len();
-        for i in 0..n
+        for i in 0..n - 1
         {
             min = a[i];
             index = i;
