@@ -17,3 +17,7 @@ path = "src/binary_adder/main.rs"
 [[bin]]
 name = "selection_sort"
 path = "src/selection_sort/main.rs"
+
+[[bin]]
+name = "merge_sort"
+path = "src/merge_sort/main.rs"
