@@ -25,3 +25,7 @@ path = "src/merge_sort/main.rs"
 [[bin]]
 name = "binary_search"
 path = "src/binary_search/main.rs"
+
+[[bin]]
+name = "bubble_sort"
+path = "src/bubble_sort/main.rs"
