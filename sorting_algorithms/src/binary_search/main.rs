@@ -6,7 +6,7 @@ fn main() {
         print!(" {} ", elem);
     }
     print!("]\n");
-    let index = binary_search(&a, 7, 0, a.len());
+    let index = binary_search(&a, 4, 0, a.len());
     println!("{:?}", index);
 }
 
@@ -14,6 +14,6 @@ fn binary_search(a: &Vec<i32>, val: i32, p: usize, r: usize) -> Option<usize> {
     if p >= r { return None };
     let q = (p + r) / 2;
     if val == a[q] { return Some(q) }
-    return if val < a[q] { binary_search(a, val, p, q) }
-    else { binary_search(a, val, q + 1, r) }
+    if val < a[q] { return binary_search(a, val, p, q); }
+    return binary_search(a, val, q + 1, r);
 }
