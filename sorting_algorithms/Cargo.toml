@@ -21,3 +21,7 @@ path = "src/selection_sort/main.rs"
 [[bin]]
 name = "merge_sort"
 path = "src/merge_sort/main.rs"
+
+[[bin]]
+name = "binary_search"
+path = "src/binary_search/main.rs"
