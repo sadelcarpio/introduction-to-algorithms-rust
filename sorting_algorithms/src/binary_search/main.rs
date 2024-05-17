@@ -6,14 +6,14 @@ fn main() {
         print!(" {} ", elem);
     }
     print!("]\n");
-    let index = binary_search(&a, 7, 0, a.len() - 1);
+    let index = binary_search(&a, 1, 0, a.len());
     println!("{:?}", index);
 }
 
 fn binary_search(a: &Vec<i32>, val: i32, p: usize, r: usize) -> Option<usize> {
-    if p > r { return None };
+    if p >= r { return None };
     let q = (p + r) / 2;
-    return if val == a[q] { Some(q) }
-    else if val < a[q] { binary_search(a, val, p, q - 1) }
+    if val == a[q] { return Some(q) }
+    if val < a[q] { return binary_search(a, val, p, q) }
     else { binary_search(a, val, q + 1, r) }
 }
