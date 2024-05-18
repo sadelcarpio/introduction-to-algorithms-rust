@@ -29,3 +29,7 @@ path = "src/binary_search/main.rs"
 [[bin]]
 name = "bubble_sort"
 path = "src/bubble_sort/main.rs"
+
+[[bin]]
+name = "two_sum"
+path = "src/two_sum/main.rs"
