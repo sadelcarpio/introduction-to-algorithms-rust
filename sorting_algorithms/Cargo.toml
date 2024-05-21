@@ -33,3 +33,7 @@ path = "src/bubble_sort/main.rs"
 [[bin]]
 name = "two_sum"
 path = "src/two_sum/main.rs"
+
+[[bin]]
+name = "num_inversions"
+path = "src/num_inversions/main.rs"
